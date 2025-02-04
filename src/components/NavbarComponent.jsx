@@ -29,7 +29,7 @@ const NavbarComponent = () => {
                             {navLinks.map((Link) => {
                                 return (
                                     <div className="navlink" key={Link.id}>
-                                        <NavLink to={Link.path} className={({ isActive, isPending }) => isPending ? "pending" : isActive ? "active" : ""} end >{Link.text}</NavLink>
+                                        <NavLink to={Link.path} className={({ isActive, isPending }) => (isPending ? "pending" : isActive ? "active" : "")} end>{Link.text}</NavLink>
                                     </div>
                                 );
                             })}
