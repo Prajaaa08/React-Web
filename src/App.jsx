@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Routes, Route } from "react-router";
+
+import NavbarComponent from "./components/NavbarComponent";
+import FooterComponent from "./components/FooterComponent";
+
+import HomePage from "./pages/HomePage";
+import KelasPage from "./pages/KelasPage";
+import TestimonialPage from "./pages/TestimonialPage";
+import FaqPage from "./pages/FaqPage";
+import SyaratKetentuanPage from "./pages/SyaratKetentuanPage";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <NavbarComponent />
+      <Routes>
+        <Route path="/" element={HomePage} />
+        <Route path="/kelas" element={KelasPage} />
+        <Route path="/testimonial" element={TestimonialPage} />
+        <Route path="/faq" element={FaqPage} />
+        <Route path="/syarat-ketentuan" element={SyaratKetentuanPage} />
+      </Routes>
+      <FooterComponent />
     </>
   )
 }
 
-export default App
+export default App;
