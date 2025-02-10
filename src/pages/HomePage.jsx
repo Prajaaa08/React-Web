@@ -65,6 +65,15 @@ const HomePage = () => {
                     </Row>
                 </Container>
             </div>
+            <div className="tetimonial py-5">
+                <Container>
+                        <Row>
+                            <Col>
+                                <h1 className="text-center fw-bold ">Testimonial</h1>
+                            </Col>
+                        </Row>
+                </Container>
+            </div>
         </div>
     );
 };
