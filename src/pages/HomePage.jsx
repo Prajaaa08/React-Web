@@ -11,13 +11,13 @@ const HomePage = () => {
                             <h1 className="mb-4">
                                 Temukan <br /> <span>Bakat Kreatifmu</span> Bersama Kami!
                             </h1>
-                            <p>
+                            <p className="mb-4">
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. VeriLorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis expedita doloribus est porro consequuntur impedit.
                             </p>
-                            <button>Lihat Kelas</button>
-                            <button>Lihat Promo</button>
+                            <button className="btn btn-danger btn-lg-rounded-1 me-2 mb-xs-0 mb-2">Lihat Kelas</button>
+                            <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2">Lihat Promo</button>
                         </Col>
-                        <Col>
+                        <Col lg="6" className="pt-lg-0 pt-5">
                             <img src={HeroImage} alt="hero-img" />
                         </Col>
                     </Row>
