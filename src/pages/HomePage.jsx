@@ -2,6 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { kelasTerbaru, dataSwiper } from "../data/index";
 import HeroImage from "../assets/img/hero.png";
+import FaqComponent from "../components/FaqComponent";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,6 +17,7 @@ const HomePage = () => {
   const navigate = useNavigate();
   return (
     <div className="homepage">
+      {/* Section Header */}
       <header className="w-100 min-vh-100">
         <Container>
           <Row className="header-box d-flex align-items-center pt-lg-5">
@@ -41,6 +43,7 @@ const HomePage = () => {
           </Row>
         </Container>
       </header>
+      {/* Section Kelas */}
       <div className="kelas w-100 min-vh-100">
         <Container>
           <Row>
@@ -91,6 +94,7 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+      {/* Section Testimonial */}
       <div className="testimonial py-5">
         <Container>
           <Row>
@@ -144,6 +148,8 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
+      {/* Section Faq */}
+      <FaqComponent />
     </div>
   );
 };
