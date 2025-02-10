@@ -13,16 +13,16 @@ function App() {
   return (
     <>
       <NavbarComponent />
-      <Routes>
-        <Route path="/" Component={HomePage} />
-        <Route path="/kelas" Component={KelasPage} />
-        <Route path="/testimonial" Component={TestimonialPage} />
-        <Route path="/faq" Component={FaqPage} />
-        <Route path="/syaratketentuan" Component={SyaratKetentuanPage} />
-      </Routes>
+        <Routes>
+          <Route path="/" Component={HomePage} />
+          <Route path="/kelas" Component={KelasPage} />
+          <Route path="/testimonial" Component={TestimonialPage} />
+          <Route path="/faq" Component={FaqPage} />
+          <Route path="/syaratketentuan" Component={SyaratKetentuanPage} />
+        </Routes>
       <FooterComponent />
     </>
-  )
+  );
 }
 
 export default App;
