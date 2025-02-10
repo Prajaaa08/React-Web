@@ -54,7 +54,7 @@ const HomePage = () => {
           <Row>
             {kelasTerbaru.map((kelas) => {
               return (
-                <Col key={kelas.id}>
+                <Col key={kelas.id} className="shadow rounded"> 
                   <img
                     src={kelas.image}
                     alt="unsplash.com"
@@ -91,11 +91,11 @@ const HomePage = () => {
           </Row>
         </Container>
       </div>
-      <div className="tetimonial py-5">
+      <div className="testimonial py-5">
         <Container>
           <Row>
             <Col>
-              <h1 className="text-center fw-bold ">Testimonial</h1>
+              <h1 className="text-center fw-bold">Testimonial</h1>
             </Col>
           </Row>
           <Row>
@@ -107,33 +107,39 @@ const HomePage = () => {
               }}
               breakpoints={{
                 640: {
-                  slidesPerView: 2,
+                  slidesPerView: 1,
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 4,
+                  slidesPerView: 2,
                   spaceBetween: 40,
                 },
-                1024: {
-                  slidesPerView: 5,
+                992: {
+                  slidesPerView: 2,
+                  spaceBetween: 50,
+                },
+                1200: {
+                  slidesPerView: 3,
                   spaceBetween: 50,
                 },
               }}
               modules={[Pagination]}
               className="mySwiper"
             >
-                {dataSwiper.map((data) => {
-                    return <SwiperSlide key={data.id}>
-                        <p>{data.desc}</p>
-                        <div>
-                            <img src={data.image} alt="" />
-                            <div>
-                                <h5>{data.name}</h5>
-                                <p>{data.skill}</p>
-                            </div>
-                        </div>
-                    </SwiperSlide>;
-                })}
+              {dataSwiper.map(data => {
+                return (
+                  <SwiperSlide key={data.id} className="shadow-sm">
+                    <p className="desc">{data.desc}</p>
+                    <div className="people">
+                      <img src={data.image} alt="" />
+                      <div>
+                        <h5 className="mb-1">{data.name}</h5>
+                        <p className="m-0 fw-bold">{data.skill}</p>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                )
+              })}
             </Swiper>
           </Row>
         </Container>
