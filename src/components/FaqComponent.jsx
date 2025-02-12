@@ -14,20 +14,18 @@ const FaqComponent = () => {
           </Col>
         </Row>
         <Row className="row-cols-lg-2 row-cols-1 g-4 pt-5">
-            {faq.map((data) => {
-                return (
-                    <Col key={data.id}>
-                        <Accordion className="shadow-sm">
-                        <Accordion.Item eventKey={data.eventKey}>
-                            <Accordion.Header>{data.title}</Accordion.Header>
-                            <Accordion.Body>
-                             {data.desc}
-                            </Accordion.Body>
-                        </Accordion.Item>
-                        </Accordion>
-                    </Col>
+          {faq.map((data) => {
+            return (
+              <Col key={data.id}>
+                <Accordion className="shadow-sm">
+                  <Accordion.Item eventKey={data.eventKey}>
+                    <Accordion.Header>{data.title}</Accordion.Header>
+                    <Accordion.Body>{data.desc}</Accordion.Body>
+                  </Accordion.Item>
+                </Accordion>
+              </Col>
             );
-            })}
+          })}
         </Row>
       </Container>
     </div>
