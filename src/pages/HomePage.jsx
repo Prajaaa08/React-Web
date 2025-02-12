@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { kelasTerbaru, dataSwiper } from "../data/index";
 import HeroImage from "../assets/img/hero.png";
 import FaqComponent from "../components/FaqComponent";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
