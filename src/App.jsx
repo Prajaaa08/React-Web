@@ -7,7 +7,7 @@ import HomePage from "./pages/HomePage";
 import KelasPage from "./pages/KelasPage";
 import TestimonialPage from "./pages/TestimonialPage";
 import FaqPage from "./pages/FaqPage";
-import SyaratKetentuanPage from "./pages/SyaratKetentuanPage";
+import SyaratKetenPage from "./pages/SyaratKetentuanPage";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/kelas" Component={KelasPage} />
           <Route path="/testimonial" Component={TestimonialPage} />
           <Route path="/faq" Component={FaqPage} />
-          <Route path="/syaratketentuan" Component={SyaratKetentuanPage} />
+          <Route path="/syaratketen" Component={SyaratKetenPage} />
         </Routes>
       <FooterComponent />
     </>
