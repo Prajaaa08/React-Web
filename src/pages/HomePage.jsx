@@ -29,7 +29,7 @@ const HomePage = () => {
                 VeriLorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Veritatis expedita doloribus est porro consequuntur impedit.
               </p>
-              <button className="btn btn-danger btn-lg-rounded-1 me-2 mb-xs-0 mb-2">
+              <button className="btn btn-danger btn-lg-rounded-1 me-2 mb-xs-0 mb-2" onClick={() => navigate("/kelas")}>
                 Lihat Kelas
               </button>
               <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2">
@@ -56,7 +56,7 @@ const HomePage = () => {
           <Row>
             {kelasTerbaru.map((kelas) => {
               return (
-                <Col key={kelas.id} className="shadow rounded"> 
+                <Col key={kelas.id} className="shadow rounded">
                   <img
                     src={kelas.image}
                     alt="unsplash.com"
@@ -129,7 +129,7 @@ const HomePage = () => {
               modules={[Pagination]}
               className="mySwiper"
             >
-              {dataSwiper.map(data => {
+              {dataSwiper.map((data) => {
                 return (
                   <SwiperSlide key={data.id} className="shadow-sm">
                     <p className="desc">{data.desc}</p>
@@ -141,7 +141,7 @@ const HomePage = () => {
                       </div>
                     </div>
                   </SwiperSlide>
-                )
+                );
               })}
             </Swiper>
           </Row>
