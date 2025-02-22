@@ -17,27 +17,34 @@ const HomePage = () => {
   return (
     <div className="homepage">
       {/* Section Header */}
-      <header className="w-100 min-vh-100">
+      <header className="w-100 min-vh-100 d-flex align-items-center overflow-hidden">
         <Container>
           <Row className="header-box d-flex align-items-center pt-lg-5">
             <Col lg="6">
-              <h1 className="mb-4">
+              <h1 className="mb-4 animate__animated animate__fadeInUp animate__delay-1s">
                 Temukan <br /> <span>Bakat Kreatifmu</span> Bersama Kami!
               </h1>
-              <p className="mb-4">
+              <p className="mb-4 animate__animated animate__fadeInUp animate__delay-1s">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 VeriLorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Veritatis expedita doloribus est porro consequuntur impedit.
               </p>
-              <button className="btn btn-danger btn-lg-rounded-1 me-2 mb-xs-0 mb-2" onClick={() => navigate("/kelas")}>
+              <button
+                className="btn btn-danger btn-lg-rounded-1 me-2 mb-xs-0 mb-2 animate__animated animate__fadeInUp animate__delay-1s"
+                onClick={() => navigate("/kelas")}
+              >
                 Lihat Kelas
               </button>
-              <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2">
+              <button className="btn btn-outline-danger btn-lg rounded-1 mb-xs-0 mb-2 animate__animated animate__fadeInUp animate__delay-1s">
                 Lihat Promo
               </button>
             </Col>
             <Col lg="6" className="pt-lg-0 pt-5">
-              <img src={HeroImage} alt="hero-img" />
+              <img
+                src={HeroImage}
+                alt="hero-img"
+                className="animate__animated animate__fadeInUp"
+              />
             </Col>
           </Row>
         </Container>
