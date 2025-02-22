@@ -1,8 +1,11 @@
+import FaqComponent from "../components/FaqComponent";
 
 const FaqPage = () => {
   return (
-    <div>FaqPage</div>
-  )
-}
+    <div>
+      <FaqComponent />
+    </div>
+  );
+};
 
-export default FaqPage
+export default FaqPage;
