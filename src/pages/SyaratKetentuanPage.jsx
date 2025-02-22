@@ -124,6 +124,7 @@ const SyaratKetenPage = () => {
           </Row>
         </Container>
       </div>
+      <FaqComponent />
     </div>
   );
 };
