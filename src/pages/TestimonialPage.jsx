@@ -12,10 +12,10 @@ const TestimonialPage = () => {
         <Container>
           <Row>
             <Col className="pt-5">
-              <h1 className="fw-bold text-center animate__animated animate__fadeInUp animate__delay-0.5s">
+              <h1 className="fw-bold text-center animate__animated animate__fadeInUp animate__delay-1s">
                 Semua Testimonial
               </h1>
-              <p className="text-center animate__animated animate__fadeInUp animate__delay-0.8s">
+              <p className="text-center animate__animated animate__fadeInUp animate__delay-1s">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
               </p>
             </Col>
